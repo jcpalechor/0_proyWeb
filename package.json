@@ -1,0 +1,19 @@
+{
+  "name": "0_proyweb",
+  "version": "1.0.0",
+  "description": "Proyecto de desarrollo en la nube",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body": "^5.1.0",
+    "express": "^4.18.2",
+    "mongoose": "^6.10.0",
+    "nodemon": "^2.0.22",
+    "parser": "^0.1.4"
+  }
+}
