@@ -12,7 +12,7 @@ app.get('/',(req,res)=>{
 res.send('prueba 1234');
 });
 
-// mongoose 456
+// mongoose 456789
 mongoose.connect('mongodb+srv://jcpalechor2501:Q6CZ7uiG4vRpD9FZ@bd.vpzhkgo.mongodb.net/',
 {useNewUrlParser:true},()=>{
     try{
