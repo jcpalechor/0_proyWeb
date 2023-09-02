@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="primer.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bangers&display=swap"
+      rel="stylesheet"
+    />
+    <title>Registro cliente</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="">
+          <img
+            class="img-fluid rounded"
+            src="imagenes/logo1.png"
+            alt="MiniMarket"
+          />
+        </a>
+        <p class="text-light">Full Market</p>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mynavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mynavbar">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link text-info" href="">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-info" href="consultarCliente.html"
+                >Cliente</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-info" href="">Proveedor</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-info" href="">Producto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-info" href="">Factura de venta</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-info" href="">Orden de compra</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <form class="bg-dark bg-opacity-25 pt-3 pb-3">
+      <div class="container bg-body bg-opacity-50 pb-1">
+        <h3 class="text-center pb-3 pt-3">Registrar cliente</h3>
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <div class="form-group">
+                <label class="control-label" for="id_tipoDoc"
+                  >Tipo documento</label
+                >
+                <select class="form-control" id="id_tipoDoc">
+                  <option value="CC">CC</option>
+                  <option value="TI">TI</option>
+                  <option value="PAS">Pasaporte</option>
+                  <option value="OTR">Otro</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="form-group">
+                <label class="control-label" for="id_identificacion"
+                  >Numero de documento</label
+                >
+                <input
+                  class="form-control"
+                  type="number"
+                  id="id_identificacion"
+                  placeholder="Ingrese numero documento sin puntos ni comas"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col">
+              <div class="form-group">
+                <label class="control-label" for="id_nombres">Nombres</label>
+                <input class="form-control" type="text" id="id_nombres" />
+              </div>
+            </div>
+            <div class="col">
+              <div class="form-group">
+                <label class="control-label" for="id_apellidos"
+                  >Apellidos</label
+                >
+                <input class="form-control" type="text" id="id_apellidos" />
+              </div>
+            </div>
+          </div>
+
+          <div class="row text-center pb-3 pt-3">
+            <div class="col">
+              <div class="form-group">
+                <button type="submit" class="btn btn-success">Cancelar</button>
+              </div>
+            </div>
+            <div class="col">
+              <div class="form-group">
+                <button type="submit" class="btn btn-success">Registrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+
+    <footer id="piePagina" class="pb-3 pt-3">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-12 col-md-6 col-lg">
+            <a class="text-info" href="#">Quienes somos?</a>
+          </div>
+          <div class="col-12 col-md-6 col-lg">
+            <a class="text-info" href="#">Contacto</a>
+          </div>
+          <div class="col-12 col-md-6 col-lg">
+            <a class="text-info" href="#">Preguntas frecuentes</a>
+          </div>
+          <div class="col-12 col-md-6 col-lg">
+            <p class="text-info">Redes sociales</p>
+            <a href="#" class="text-info">
+              <i class="bi bi-facebook"></i>
+            </a>
+            <a href="#" class="text-info">
+              <i class="bi bi-whatsapp"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
